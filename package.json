@@ -1,0 +1,32 @@
+{
+  "name": "practice-weather-bot",
+  "version": "1.0.0",
+  "description": "This bot created by UZBase organization.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UZBase/practice-weather-bot.git"
+  },
+  "keywords": [
+    "Telegraf",
+    "Js"
+  ],
+  "author": " <Umarjon Sharofiddinov>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UZBase/practice-weather-bot/issues"
+  },
+  "homepage": "https://github.com/UZBase/practice-weather-bot#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "axios": "^0.26.0",
+    "dotenv": "^16.0.0",
+    "telegraf": "^4.7.0"
+  }
+}

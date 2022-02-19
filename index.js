@@ -10,6 +10,27 @@ bot.start((ctx) => {
     } catch (e) { }
 })
 
+bot.command('about', async (ctx) => {
+    try {
+        ctx.replyWithHTML(
+            "Привет, я только-только изучаю TelegrafJs и это мой один из первых ботов.",
+            Markup.inlineKeyboard([
+                [
+                    Markup.button.url("Мой ютуб канал", 'https://youtube.com/c/uzbase'),
+                ],
+            ])
+        )
+    } catch (e) {
+        console.log(e)
+    }
+})
+
+
+bot.command('help', (ctx) => {
+    try {
+        ctx.reply("Просто отправьте название своего города или деревни, и вы получите прогноз погоды.\n\nЕсли вы столкнулись с какой-либо ошибкой или проблемой, отправьте сообщение @telegraf_blog")
+    } catch (e) { }
+});
 
 
 bot.launch()
